@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:background="@color/white">
+
+    <ImageView
+        android:onClick="onMapClick"
+        android:layout_width="390dp"
+        android:layout_height="280dp"
+        android:src="@drawable/map"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="110dp"/>
+
+    <ImageView
+        android:layout_marginTop="-10dp"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/back"/>
+
+    <FrameLayout
+        android:id="@+id/swipela"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/welcomeContainer"
+            android:layout_width="match_parent"
+            android:layout_height="385dp"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:background="@drawable/rounded_corner_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Добро пожаловать!"
+                android:textColor="#000000"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="60dp"/>
+
+            <TextView
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:text="Мы рады приветствовать вас в нашем приложении по навигации в зоопарке Зверополис"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@drawable/tool_bar"
+            android:layout_marginBottom="50dp"
+            android:gravity="center">
+
+            <ImageView
+                android:onClick="onMapClick"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/home"
+                android:layout_margin="13dp"
+                android:layout_gravity="center"/>
+            <Space
+                android:layout_width="15dp"
+                android:layout_height="0dp"/>
+            <ImageView
+                android:onClick="onSearchClick"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/lens"
+                android:layout_margin="13dp"
+                android:layout_gravity="center"/>
+            <Space
+                android:layout_width="15dp"
+                android:layout_height="0dp"/>
+            <ImageView
+                android:onClick="onFeedbackClick"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/feedback"
+                android:layout_margin="13dp"
+                android:layout_gravity="center"/>
+            <Space
+                android:layout_width="15dp"
+                android:layout_height="0dp"/>
+            <ImageView
+                android:onClick="onSettingsClick"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/setting"
+                android:layout_margin="13dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

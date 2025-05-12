@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnimalSection"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="-10dp"
+        android:src="@drawable/back" />
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/backbutton"
+        android:onClick="onBackClick"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginBottom="150dp"
+        android:layout_gravity="bottom"
+        android:rotation="25"
+        android:src="@drawable/butterfly1"/>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginBottom="130dp"
+        android:layout_gravity="bottom"
+        android:rotation="-10"
+        android:src="@drawable/butterfly2"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="130dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/sectionNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="top|center_horizontal"
+            android:text="Название секции"/>
+
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:gravity="fill_horizontal|center_vertical"
+            android:justificationMode="inter_word"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:text="\u3000Описание секции"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:src="@drawable/backkk"
+        android:layout_marginBottom="-10dp"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@drawable/tool_bar"
+            android:layout_marginBottom="50dp"
+            android:gravity="center">
+
+            <ImageView
+                android:onClick="onMapClick"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/home"
+                android:layout_margin="13dp"
+                android:layout_gravity="center"/>
+            <Space
+                android:layout_width="15dp"
+                android:layout_height="0dp"/>
+            <ImageView
+                android:onClick="onSearchClick"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/lens"
+                android:layout_margin="13dp"
+                android:layout_gravity="center"/>
+            <Space
+                android:layout_width="15dp"
+                android:layout_height="0dp"/>
+            <ImageView
+                android:onClick="onFeedbackClick"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/feedback"
+                android:layout_margin="13dp"
+                android:layout_gravity="center"/>
+            <Space
+                android:layout_width="15dp"
+                android:layout_height="0dp"/>
+            <ImageView
+                android:onClick="onSettingsClick"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/setting"
+                android:layout_margin="13dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

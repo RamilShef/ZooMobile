@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Feedback"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Обратная связь"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="130dp"/>
+
+    <TextView
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="fill_horizontal|center_vertical"
+        android:justificationMode="inter_word"
+        android:layout_gravity="top|center_horizontal"
+        android:text="\u3000Мы ценим ваше мнение и стремимся сделать наше приложение лучше! Если у вас есть предложения, замечания или вопросы, пожалуйста, напишите нам. Ваше сообщение поможет нам улучшить сервис и сделать ваше взаимодействие с приложением ещё более удобным!"
+        android:textColor="#000000"
+        android:layout_marginTop="190dp"/>
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+7(927)435-39-67"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="450dp"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="155dp">
+
+        <ImageView
+            android:id="@+id/vkIcon"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/vk"/>
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="0dp"/>
+        <ImageView
+            android:id="@+id/whatsappIcon"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/whatsapp"/>
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="0dp"/>
+        <ImageView
+            android:id="@+id/telegramIcon"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/tg"/>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_marginTop="-10dp"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/back"/>
+
+    <ImageView
+        android:layout_marginBottom="-10dp"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:src="@drawable/backkk"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@drawable/tool_bar"
+            android:layout_marginBottom="50dp"
+            android:gravity="center">
+
+            <ImageView
+                android:onClick="onMapClick"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/home"
+                android:layout_margin="13dp"
+                android:layout_gravity="center"/>
+            <Space
+                android:layout_width="15dp"
+                android:layout_height="0dp"/>
+            <ImageView
+                android:onClick="onSearchClick"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/lens"
+                android:layout_margin="13dp"
+                android:layout_gravity="center"/>
+            <Space
+                android:layout_width="15dp"
+                android:layout_height="0dp"/>
+            <ImageView
+                android:onClick="onFeedbackClick"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/feedback"
+                android:layout_margin="13dp"
+                android:layout_gravity="center"/>
+            <Space
+                android:layout_width="15dp"
+                android:layout_height="0dp"/>
+            <ImageView
+                android:onClick="onSettingsClick"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/setting"
+                android:layout_margin="13dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

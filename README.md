@@ -1,4 +1,5 @@
-# 1. Launching ZooprojectServer:
+# Settings
+1. Launching ZooprojectServer:
    • Make sure that the ZooprojectServer is running and working correctly on your computer.
 2. Connecting to the router:
    • Make sure that both the server (computer) and the mobile device are connected to the same Wi-Fi network.
